@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Ella Solis</title>
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -15,10 +16,17 @@
     <div class="container">
 
       <header>
-        <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/savory.svg" class="logo">
+        <div class="wrapper">
+          <h1>Ella Solis</h1>
+            <p class="bio"> I'm a Junior at Virginia Tech studying criminology with a minor in technical communications. This is my website for Writing and Digital Media.
+            </p>
+          <div class="buttonBox">
+            <a class="myButton" href="#projects">Go</a>
+          </div>
+        </div>
       </header>
 
-      <main>
+      <main id="projects">
         <div class="recipe a">
           <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-1.png" />
           <h2>Mirco-Trends</h2>
@@ -35,8 +43,6 @@
         <div class="recipe c">
           <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-5.png" />
           <h2>Video Project</h2>
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
-          <p class="mins">25 mins</p>
           <p class="description">
             Video Project</p>
         </div>
