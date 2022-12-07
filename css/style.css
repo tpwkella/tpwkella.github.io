@@ -9,14 +9,16 @@ body {
 }
 
 header, footer {
-  background-color: #f4f0bb;
+  background: #093028;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: left;
 /*  min-width: 500px; */
 }
 
 header {
   font-family: 'Nunito', sans-serif;
-  color: #226f54;
+  color: #f8f9fa;
   min-height: 100vh;
   display: flex;
 }
@@ -25,7 +27,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(40%, 1fr) ) ;
   grid-gap: 20px;
-  margin-top: 44px;
+  margin: 44px 40px;
 
   justify-items: center;
   justify-content: center;
@@ -43,12 +45,12 @@ h1 {
 
 h2 {
   font-family: 'Nunito', sans-serif;
-  font-size: 27px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 650;
   letter-spacing: 0.3px;
   text-align: left;
-  color: #43291f;
-  padding: 10px 0px 10px 10px;
+  color: #093028;
+  padding: 5px 20px 0 20px;
 }
 
 img {
@@ -65,7 +67,7 @@ img {
 }
 
 .bio {
-  color: #226f54;
+  color: #f8f9fa;
   font-size: 24px;
   font-family: 'Nunito', sans-serif;
 }
@@ -78,9 +80,9 @@ img {
 
 .myButton {
   border-radius: 28px;
-  border: 1px solid #226f54;
+  border: 1px solid #f8f9fa;
   cursor: pointer;
-  color: #226f54;
+  color: #f8f9fa;
   font-size: 20px;
   padding: 16px 31px;
   text-decoration: none;
@@ -88,7 +90,9 @@ img {
 }
 
 .myButton:hover {
-    background-color:#87c38f;
+    background-color:#edf2f4;
+    color: #43291f;
+    border: 1px solid #43291f;
 }
 
 .myButton:active {
@@ -96,17 +100,9 @@ img {
     top:1px;
 }
 
-.recipe {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+.project {
+  box-shadow: 0 0px 1px 0 rgb(0 0 0 / 40%);
   width: 100%;
-}
-
-.a {
-
-}
-
-.c {
-
 }
 
 .time {
@@ -136,15 +132,8 @@ img {
   letter-spacing: 0.1px;
   text-align: left;
   color: #4a4a4a;
-  padding: 10px 0px 10px 10px;
+  padding: 10px 20px 20px 20px;
   border-top: 1px solid #4a4a4a;
-}
-
-.logo {
-  width: 115px;
-  height: 21.1px;
-  object-fit: contain;
-  padding: 20px;
 }
 
 .container {
@@ -153,15 +142,28 @@ img {
 }
 
 a {
-  color: #da2c38;
+  color: #093028;
 }
 
-footer {
-  margin-top: 44px;
+footer div {
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-content: center;
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @media all and (max-width:700px) {
   main {
     grid-template-columns: 1fr;
+    margin: 44px auto;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  img {
+    height: 35vh;
   }
 }
